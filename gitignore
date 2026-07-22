@@ -1,0 +1,25 @@
+# secrets
+.env
+*token*.json
+client_secret.json
+
+# state & generated media — NEVER commit, NEVER hand-delete (see WINDOWS_SETUP.md)
+pipeline.db
+pipeline.db-*
+downloads/
+edited/
+finished/
+logs/
+cache/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+
+# large assets you may prefer to keep out of git
+bgm/
+music/
+sfx/
+*.ttf
+ffmpeg_errors.log

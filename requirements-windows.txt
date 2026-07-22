@@ -1,0 +1,18 @@
+# AniFeed Studio — Windows. Derived from the real imports in the project files.
+# Install:  pip install -r requirements-windows.txt
+groq
+python-dotenv
+requests
+google-genai                 # captions + edit_planner (from google import genai)
+edge-tts                     # free TTS fallback
+numpy                        # thumbnail sharpness / pan focus
+google-api-python-client     # YouTube Data + Analytics
+google-auth-oauthlib
+google-auth-httplib2
+praw                         # reddit_pull
+yt-dlp                       # trailers (needs ffmpeg on PATH, already installed)
+tzdata                       # REQUIRED on Windows: zoneinfo has no tz database otherwise
+                             # (audience_scheduling.py would silently get no audience hour)
+
+# Optional (digest TTS layer 1 — only if FISH_API_KEY/FISH_VOICE_ID are set):
+# fish-audio-sdk
